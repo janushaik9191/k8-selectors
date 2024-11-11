@@ -33,17 +33,16 @@ kind: Pod
 metadata:
   name: pod-3
 spec:
-   podAntiAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
-      - weight: 100
-        podAffinityTerm:
-          labelSelector:
-            matchExpressions:
-            - key: purpose
-              operator: In
-              values:
-              - affinity
-          topologyKey: topology.kubernetes.io/zone
+  affinity:
+    podAntiAffinity:
+      prefferdDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchExpressions:
+          - key: purpose
+            operator: In
+            values:
+            - affinity
+        topologyKey: topology.kubernetes.io/zone
   containers:
   - name: nginx
     image: nginx:stable-perl
