@@ -34,7 +34,7 @@ metadata:
   name: pod-3
 spec:
    podAntiAffinity:
-      preferredDuringSchedulingIgnoredDuringExecution:
+      requiredDuringSchedulingIgnoredDuringExecution:
       - weight: 100
         podAffinityTerm:
           labelSelector:
