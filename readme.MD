@@ -23,7 +23,7 @@ Taint the node
 
         node affinity is two types
     1 . requried during scheduling (need to satisfy the taint condition)
-    2 . prefferd during scheduling (tries for the defined condition if not found schedule in   any another availabe node
+    2 . prefferd during scheduling (tries for the defined condition if not found schedule in   any another availabe node)
         pod affinity
     1 . first one pod is scheduled in a node
     2 . second pod is also scheduled into a same node based on label condition
