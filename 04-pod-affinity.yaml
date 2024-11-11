@@ -4,9 +4,7 @@ metadata:
   name: pod-1
   labels:
     purpose: affinity
-spec:
+spec: 
   containers:
-  # docker run -d --name nginx nginx
   - name: nginx
     image: nginx:stable-perl
----
