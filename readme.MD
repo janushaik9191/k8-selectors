@@ -31,4 +31,4 @@ Taint the node
 ``````````````````````````
 popular use case for affinity and anti affinity with cache(pod) and pods
 
-Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
+Ref:https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
