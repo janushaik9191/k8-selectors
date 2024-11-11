@@ -18,4 +18,10 @@ Taint the node
     command for label the node 
         kubectl label nodes <your-node-name> hardware=gpu
         after labeling the node, node-selector should be defined in container level
+```````````````````````````````````
+    affinity(node and pod)
+    
+        node affinity is two types
+    1 . requried during scheduling (need to satisfy the taint condition)
+    2 . prefferd during scheduling (tries for the defined condition if not found schedule in   any another availabe node)
         
