@@ -13,4 +13,9 @@ Taint the node
     tolarance of the pods 
         by using tolarance option we may schedule the pods to the tainted node but not guarentee
 ```````````````````````````````````
-    affinity
+    labeling
+        by using label concept we can schedule the pods on tainted nodes with less options
+    command for label the node 
+        kubectl label nodes <your-node-name> hardware=gpu
+        after labeling the node, node-selector should be defined in container level
+        

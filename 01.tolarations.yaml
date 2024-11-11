@@ -4,6 +4,8 @@ metadata:
   name: nginx
 spec:
   containers:
+    nodeSelector:
+      hardware: gpu
   - name: nginx
     image: nginx:stable-perl
   tolerations:
