@@ -7,7 +7,7 @@ spec:
     nodeAffinity:
     # soft rule
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
+      - weight: 3
         preference:
           matchExpressions:
           - key: another-node-label-key
