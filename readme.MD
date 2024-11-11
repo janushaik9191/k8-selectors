@@ -28,3 +28,7 @@ Taint the node
     1 . first one pod is scheduled in a node
     2 . second pod is also scheduled into a same node based on label condition
     3 . third node is scheduled in a different node by using anti affinity definition
+``````````````````````````
+popular use case for affinity and anti affinity with cache(pod) and pods
+
+Ref: https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/
